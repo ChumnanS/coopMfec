@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FireBase Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container showData()" >
+        <h2>Vertical (basic) Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default" onclick="saveOnClick()">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAXAiyV717a9xdcndhmq1ru04RnqE1lHng",
+            authDomain: "monomydb.firebaseapp.com",
+            databaseURL: "https://monomydb.firebaseio.com",
+            projectId: "monomydb",
+            storageBucket: "monomydb.appspot.com",
+            messagingSenderId: "569798316572"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+</body>
+
+</html>
